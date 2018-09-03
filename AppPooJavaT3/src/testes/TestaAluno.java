@@ -7,8 +7,7 @@ import negocio.Aluno;
 public class TestaAluno {
 
 	public static void main(String[] args) {
-		//criação
-		
+				
 		Scanner ler = new Scanner(System.in); 
 		
 		Aluno maria = new Aluno();
