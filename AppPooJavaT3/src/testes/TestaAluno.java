@@ -7,7 +7,9 @@ import negocio.Aluno;
 public class TestaAluno {
 
 	public static void main(String[] args) {
-		Scanner ler = new Scanner(System.in);
+		//criaÃ§Ã£o
+		
+		Scanner ler = new Scanner(System.in); 
 		
 		Aluno maria = new Aluno();
 		Aluno joao = new Aluno();
@@ -21,7 +23,7 @@ public class TestaAluno {
 		System.out.printf("Informe a sua mensalidade: ");
 		maria.mensalidade = ler.nextFloat();
 		
-		System.out.printf("Você é do sexo masculino? ");
+		System.out.printf("VocÃª Ã© do sexo masculino? ");
 		maria.masculino = ler.nextBoolean();
 		
 		maria.exibir();
@@ -35,7 +37,7 @@ public class TestaAluno {
 		System.out.printf("Informe a sua mensalidade: ");
 		joao.mensalidade = ler.nextFloat();
 
-		System.out.printf("Você é do sexo masculino? ");
+		System.out.printf("VocÃª Ã© do sexo masculino? ");
 		joao.masculino = ler.nextBoolean();
 		
 		joao.exibir();	
@@ -50,11 +52,11 @@ public class TestaAluno {
 		
 		
 //		Exiba na tela o nome do aluno mais velho
-		System.out.printf("%s é o aluno mais velho\n",
+		System.out.printf("%s Ã© o aluno mais velho\n",
 				(maria.idade >= joao.idade ? maria.nome : joao.nome));
 		
 //		Exiba na tela o nome do aluno que paga a maior mensalidade
-		System.out.printf("%s é o aluno com a maior mensalidade\n",
+		System.out.printf("%s Ã© o aluno com a maior mensalidade\n",
 				(maria.mensalidade >= joao.mensalidade ? maria.nome : joao.nome));
 	}	
 }
